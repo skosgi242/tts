@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Circular Html5 Audio Player Demo</title>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="progres-bar.css">
+    <style>
+    html { min-height:100vh;}
+    body { background-color:#fafafa; font-family:'Roboto'; margin: 45px;}
+    /* .container { margin:150px auto; max-width:960px;} */
+    /* .mediPlayer { margin:20px;} */
+    td { text-align: center; }
+    </style>
+</head>
+<body>
+<!-- <div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript">
+google_ad_client = "ca-pub-2783044520727903";
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div> -->
+<div class="container">
+  <h1 id="Demo for paper" style="font-size:50px"><center> Meisner Bots: Behaviour Aware Text to Speech Systems </center></h1>
+<h2 id="abstract">Abstract:</h2>
+<div style="text-align: justify;font-size: 20px">Humans have a sophisticated ability to interact with each other through dialogues. Machine learning techniques have found reasonable success in generating human-like text for dialogues and rendering speech in natural voices. But the inability of a Text-To-Speech(TTS) systems to emulate emotion in speech creates an uncanny-valley as dialogues require rendering in varied emotions. Also, considerable effort has been made towards modelling the emotional nuances in human dialogues. But the inability of current Text-To-Speech(TTS) systems to generate prosody and intonation for any given emotion lay waste these efforts towards enhancing human computer interaction. We propose a method to compute phoneme level variances given a text and emotion. We show that this method can be scaled across TTS frameworks. We also show the improvement in naturalness of generated conversation when modelled with prosody control. The proposed method improves the naturalness of not only day-to-day dialogues, but also high emotive dialogues like excerpts from plays.</div>
+</div>
+<p><br /></p>
+<h4 style="font-size:20px">1. Adversarial attack on speaker recognition system </h4>
+<div class='images' style='display: grid; grid-template-columns: 29% 69%; grid-gap: 2%'>
+  <div><img src="vgg.jpg" alt="arch" style='width : 100%' /></div>
+  <div><img src="vgg.jpg" alt="arch" style='width : 100%' /></div>
+</div>
+<!-- <center><p><img src="vgg.jpg" alt="arch" /></p> </center> -->
+<h4 style="font-size:20px">2. Demo of Vanilla FGSM, top-k and top-2k attacks: </h4>
+<blockquote>
+<table border=1 >
+<div style="text-align: justify;font-size: 20px; margin-bottom: 20px">A sample of particular speaker is attacked to the given target speaker with different attacks.</div>
+<thead>
+<tr>
+<th align="center"><span>Original audio</span></th>
+<th align="center"><span>Target speaker</span></th>
+<th align="center"><span>Vanilla FGSM</span></th>
+<th align="center"><span>Top-k<span></th>
+<th align="center"><span>Top-2k<span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/in_7460_92002_000047_000003.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/in_7995_280250_000047_000001.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/vfgsm_7460_7995.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/topk_7460_7995.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/top2k_7460_7995.wav"></audio></td>
+
+</tr>
+<tr>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/in_7460_92002_000047_000003.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/in_5635_53458_000052_000001.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/vfgsm_7460_5635.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/topk_7460_5635.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/top2k_7460_5635.wav"></audio></td>
+
+</tr>
+<tr>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/in_192_128345_000093_000001.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/in_1212_14653_000036_000000.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/fgsm_192_1212.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/topk_192_1212.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/top2k_192_1212.wav"></audio></td>
+
+</tr>
+<tr>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/in_192_128345_000093_000001.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/in_70_121130_000007_000000.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/vfgsm_192_70.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/topk_192_70.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/fgsm/top2k_192_70.wav"></audio></td>                                               
+</tr>
+</tbody>
+</table>
+<br/>
+</blockquote>
+<h4 style="font-size:20px">3. Demo of attacking different time bands. </h4>
+<blockquote>
+<table border=1>
+<div style="text-align: justify;font-size: 20px; margin-bottom: 20px"> A sample of a speaker is attacked only the particular time frames to the given target speaker.  </div>
+<tr>
+<td align="center"><span>Position</span></td>
+<td align="center"><span>Original audio</span></td>
+<td align="center"><span>Target speaker<span></td>
+<td align="center"><span>t=2</span></td>
+<td align="center"><span>t=30<span></td>
+</tr>
+<tr>
+<td>Start</td>
+<td >
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+</td>
+<td >
+  <div class="mediPlayer"><audio class="listen" data-size="50"  src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50"  src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+</td>
+<td >
+  <div class="mediPlayer"><audio class="listen" data-size="50"  src="demo/time/F7460_192_2.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50"  src="demo/time/F7460_192_2.wav"></audio></div>
+</td>
+<td >
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/F7460_192_30.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/F7460_192_30.wav"></audio></div>
+</td>
+</tr>
+<tr>
+<td>Start</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/F192_7460_2.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/F192_7460_2.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/F192_7460_30.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/F192_7460_30.wav"></audio></div>
+</td>
+</tr>
+<tr>
+<td>Middle</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/M7460_192_2.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/M7460_192_2.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/M7460_192_30.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/M7460_192_30.wav"></audio></div>
+</td>
+</tr>
+<tr>
+<td>Middle</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/M192_7460_2.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/M192_7460_2.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/M192_7460_30.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/M192_7460_30.wav"></audio></div>
+</td>
+</tr>
+<tr>
+<td>End</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/E7460_192_2.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/E7460_192_2.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/E7460_192_30.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/E7460_192_30.wav"></audio></div>
+</td>
+</tr>
+<tr>
+<td>End</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_192_128345_000093_000001.npy_ref.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/E192_7460_2.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/E192_7460_2.wav"></audio></div>
+</td>
+<td>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/E192_7460_30.wav"></audio></div>
+  <div class="mediPlayer"><audio class="listen" data-size="50" src="demo/time/E192_7460_30.wav"></audio></div>
+</td>
+</table>
+<br/>
+</blockquote>
+<h4 style="font-size:20px">Graph: </h4>
+<blockquote>
+<div id='graph' style='display: grid; grid-template-columns: 50% 50%; grid-template-rows: 50% 50%; height :380px; width :34%'>
+  <div class= 'topLeft'style='border-right: 1px solid black;border-bottom : 1px solid black; display :grid; grid-template-rows: 33% 33% 33%; grid-template-columns: 33% 33% 33%'>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+  </div>
+  <div class= 'topRight' style='border-bottom : 1px solid rgb(126, 113, 113); display :grid; grid-template-rows: 33% 33% 33%; grid-template-columns: 33% 33% 33%'>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><span style='position: absolute; left: -21px; font-size: 10px;'>3</span><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><span style='position: absolute; left: -21px; font-size: 10px;'>2</span><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><span style='position: absolute; left: -21px; font-size: 10px;'>1</span><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+  </div>
+  <div class= 'bottomLeft' style='border-right: 1px solid black;display :grid; grid-template-rows: 33% 33% 33%; grid-template-columns: 33% 33% 33%'>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><span style='position: absolute; top: -3px; font-size: 10px;'>-3</span><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><span style='position: absolute; top: -3px; font-size: 10px;'>-2</span><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><span style='position: absolute; top: -3px; font-size: 10px;'>-1</span><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+  </div>
+  <div class= 'bottomRight' style='display :grid; grid-template-rows: 33% 33% 33%; grid-template-columns: 33% 33% 33%'>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><span style='position: absolute; top: -3px; font-size: 10px;'>1</span><span style='position: absolute; left: -21px; font-size: 10px;'>-1</span><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><span style='position: absolute; top: -3px; font-size: 10px;'>2</span><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><span style='position: absolute; top: -3px; font-size: 10px;'>3</span><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><span style='position: absolute; left: -21px; font-size: 10px;'>-2</span><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><span style='position: absolute; left: -21px; font-size: 10px;'>-3</span><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+    <div class="mediPlayer" style="display: flex; justify-content: center; align-items: center; width: 30px; margin: auto; position: relative;"><audio class="listen" data-size="50" src="demo/time/in_7460_92002_000047_000003.npy_ref.wav"></audio> </div>
+  </div>
+</div>
+</blockquote>
+<h4 style="font-size:20px">4. Demo of attacking frequency band: </h4>
+<blockquote>
+<table border=1>
+<div style="text-align: justify;font-size: 20px; margin-bottom: 20px">A sample of particular speaker is attacked only on certain frequency bands to the given target speaker.</div>
+<tr>
+<td align="center"><span>Original audio</span></td>
+<td align="center"><span>Target speaker</span></td>
+<td align="center"><span>Attacked</span></td>
+</tr>
+<tr>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/in_7460_92002_000047_000003.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/in_5635_53458_000052_000001.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/7460_5635.wav"></audio></td>
+
+</tr>
+<tr>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/in_7995_280250_000047_000001.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/in_70_121130_000007_000000.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/7995_70.wav"></audio></td>
+
+</tr>
+<tr>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/in_5635_53458_000052_000001.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/in_192_128345_000093_000001.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/5635_192.wav"></audio></td>
+</tr>
+<tr>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/in_70_121130_000007_000000.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/in_2499_156153_000007_000003.npy_ref.wav"></audio></td>
+<td class="mediPlayer"><audio class="listen" data-size="50" src="demo/freq/70_2499.wav"></audio></td>                                        
+</tr>
+</table>
+<br/>
+</blockquote>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="player.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.mediPlayer').mediaPlayer();
+    });
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
